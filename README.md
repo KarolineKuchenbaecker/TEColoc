@@ -1,7 +1,7 @@
-# TEColoc
-trans-ethnic colocalization 
+# TAColoc
+trans-ancestry colocalization 
 
-Trans-ethnic colocalization (TEColoc) tests whether a specific locus has the same causal variant in two groups with different ancestry. It has been described in https://doi.org/10.1101/525170. It uses the Joint Likelihood Mapping (JLIM) model. JLIM was originally developed for colocalization testing of GWAS and eQTL signals. See http://genetics.bwh.harvard.edu/wiki/sunyaevlab/jlim or https://github.com/cotsapaslab/jlim for more details about JLIM.
+Trans-ancestry colocalization (TAColoc) tests whether a specific locus has the same causal variant in two groups with different ancestry. It has been described in https://doi.org/10.1101/525170. It uses the Joint Likelihood Mapping (JLIM) model. JLIM was originally developed for colocalization testing of GWAS and eQTL signals. See http://genetics.bwh.harvard.edu/wiki/sunyaevlab/jlim or https://github.com/cotsapaslab/jlim for more details about JLIM.
 
 
 # Requirements
@@ -34,7 +34,7 @@ to test extract a given region
 tabix ${resfile}.gz 16:56993320-56993326
 
 
-# Run TEColoc
+# Run TAColoc
 Directory paths for the raw data, summary stats and working directory need to be modified in the script manually. It can then be run for a specific locus via 
 ./TEColoc_v1.sh [PhenotypeName] [chromosome] [chromosome] [lead SNP] [position]
 For example
